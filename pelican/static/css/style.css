@@ -1,0 +1,25 @@
+body {
+    padding-top: 60px;
+    background-image: url(../images/grey-squares-background.png);
+    background-size: 397px 322px;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  body {
+    background-image: url(../images/grey-squares-background_@2X.png);
+  }
+}
+
+#content, .well {
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 19px;
+}
+
+.navbar-fixed-bottom .navbar-inner .container {
+  padding: 20px 0;
+}
