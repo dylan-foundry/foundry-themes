@@ -63,3 +63,7 @@ a, a:hover, a:visited, a:focus {
   color: #999;
   margin: 5px 0;
 }
+
+.post-info a {
+  text-decoration: underline;
+}
