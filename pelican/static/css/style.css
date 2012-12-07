@@ -15,11 +15,27 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 #content, .well {
   background-color: white;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #f2a140;
   border-radius: 4px;
   padding: 19px;
 }
 
 .navbar-fixed-bottom .navbar-inner .container {
   padding: 20px 0;
+}
+
+.navbar .nav > li > a {
+  padding-top: 15px;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-header {
+  color: #1A9197;
+}
+
+a, a:hover, a:visited, a:active {
+  color: #434d81;
+}
+
+.entry-title a {
+  color: #1A9197;
 }
