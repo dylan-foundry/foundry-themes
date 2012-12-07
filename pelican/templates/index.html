@@ -2,6 +2,7 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 {% if articles %}
+    {% include 'disqus_script.html' %}
     {% for article in articles_page.object_list %}
         <section id="content" class="body">
             <article class="hentry">
