@@ -1,8 +1,13 @@
 body {
-    padding-top: 60px;
     background-image: url(../images/grey-squares-background.png);
     background-size: 397px 322px;
+}
+
+@media (min-width: 481px) {
+  body {
+    padding-top: 60px;
     padding-bottom: 70px;
+  }
 }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
