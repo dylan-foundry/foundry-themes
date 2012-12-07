@@ -70,6 +70,11 @@
             {% for name, link in SOCIAL %}
             <li><a href="{{ link }}">{{ name}}</a></li>
             {% endfor %}
+
+            <li class="nav-header">Categories</li>
+            {% for cat, null in categories %}
+              <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
           </ul>
         </div><!--/.well -->
         {% endblock %}
