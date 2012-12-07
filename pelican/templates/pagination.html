@@ -1,0 +1,28 @@
+{% if DEFAULT_PAGINATION %}
+    {% if articles_paginator.num_pages > 1 %}
+<div class="pagination">
+    <ul>
+    {% if articles_page.has_previous() %}
+        {% if articles_page.previous_page_number() == 1 %}
+            <li><a href="{{ SITEURL }}/{{ page_name }}.html">&laquo;</a></li>
+        {% else %}
+            <li><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">&laquo;</a></li>
+        {% endif %}
+    {% endif %}
+    {% for page_number in range(1, articles_paginator.num_pages + 1) %}
+        {% if page_number == articles_page.number %}
+            <li><span>{{ page_number }}</span></li>
+        {% elif page_number == 1 %}
+            <li><a href="{{ SITEURL }}/{{ page_name }}.html">{{ page_number }}</a></li>
+        {% else %}
+            <li><a href="{{ SITEURL }}/{{ page_name }}{{ page_number }}.html">{{ page_number }}</a></li>
+        {% endif %}
+    {% endfor %}
+    {% if articles_page.has_next() %}
+        <li><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">&raquo;</a></li>
+    {% endif %}
+    </ul>
+</div>
+    {% endif %}
+{% endif %}
+

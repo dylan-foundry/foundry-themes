@@ -2,6 +2,7 @@ body {
     padding-top: 60px;
     background-image: url(../images/grey-squares-background.png);
     background-size: 397px 322px;
+    padding-bottom: 70px;
 }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -13,11 +14,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
 }
 
-#content, .well {
+#featured, #content, .well {
   background-color: white;
   border: 1px solid #f2a140;
   border-radius: 4px;
   padding: 19px;
+}
+
+#content {
+  margin-bottom: 20px;
 }
 
 .navbar-fixed-bottom .navbar-inner .container {
@@ -38,4 +43,19 @@ a, a:hover, a:visited, a:active {
 
 .entry-title a {
   color: #1A9197;
+}
+
+.twitter-share-button {
+  float: right;
+}
+
+.readmore {
+  display: block;
+  margin-left: auto;
+  text-align: right;
+}
+
+.post-info, .post-info a {
+  color: #999;
+  margin: 5px 0;
 }
