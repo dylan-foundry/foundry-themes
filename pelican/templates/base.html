@@ -75,6 +75,13 @@
             {% for cat, null in categories %}
               <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
             {% endfor %}
+
+            {% if tags %}
+            <li class="nav-header">Tags</li>
+            {% for t, null in tags %}
+              <li {% if (tag == t) or (article and t in article.tags) %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ t.url }}"><i class="icon-tag"></i>{{ t }}</a></li>
+            {% endfor %}
+            {% endif %}
           </ul>
         </div><!--/.well -->
         {% endblock %}
