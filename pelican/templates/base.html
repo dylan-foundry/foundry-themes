@@ -43,8 +43,8 @@
            Dylan Foundry
          </a>
          <ul class="nav">
-         {% for page in PAGES %}
-           <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+         {% for pg in PAGES %}
+           <li{% if page == pg %} class="current-page"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
          {% endfor %}
          </ul>
       </div>
