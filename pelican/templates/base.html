@@ -73,7 +73,7 @@
 
             <li class="nav-header">Categories</li>
             {% for cat, null in categories %}
-              <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}"><i class="icon-list"></i>{{ cat }}</a></li>
             {% endfor %}
 
             {% if tags %}
