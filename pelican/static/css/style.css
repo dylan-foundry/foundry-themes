@@ -99,3 +99,7 @@ a, a:hover, a:visited, a:focus {
 .nav-list .social a[href*='git.io'] {background-image: url('../images/icons/github.png');}
 .nav-list .social a[href*='gittip.com'] {background-image: url('../images/icons/gittip.png');}
 .nav-list .social a[href*='plus.google.com'] {background-image: url('../images/icons/google-plus.png');}
+
+img.align-right {
+  float: right;
+}
