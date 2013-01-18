@@ -87,3 +87,7 @@ a, a:hover, a:visited, a:focus {
 img.align-right {
   float: right;
 }
+
+div.comments {
+  padding-top: 20px;
+}
