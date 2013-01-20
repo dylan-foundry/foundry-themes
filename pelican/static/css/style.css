@@ -50,8 +50,12 @@ h1, h2, h3, h4, h5, h6, .nav-header {
   color: #1A9197;
 }
 
-a, a:hover, a:visited, a:focus {
+.nav-list a, .nav-list a:hover, .nav-list a:visited, .nav-list a:focus {
   color: #434d81;
+}
+
+a, a:hover, a:visited, a:focus {
+  color: #1A9197;
 }
 
 .entry-title a {
