@@ -3,6 +3,12 @@ body {
     background-size: 397px 322px;
 }
 
+blockquote p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 @media (min-width: 481px) {
   body {
     padding-top: 60px;
